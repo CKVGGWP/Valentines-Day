@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="valentine's Day, 2023, date">
+    <meta name="theme-color" content=" #DC362D" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader" class="m-5">
+        <h2 id="loaderHeart" class="animate__animated animate__bounce animate__infinite">💘</h2>
+        <h2 class="animate__animated animate__fadeIn">Loading...</h2>
+    </div>
+
+    <!-- HEART DOOR -->
+    <div id="mainContainer">
+
+
+        <!-- TITLE -->
+        <em>
+            <h1 id="header" class="animate__animated animate__fadeInDown" style="text-shadow:1px 1px 0 #444"></h1>
+        </em>
+
+        <!--  BEE  -->
+        <div class="animate__animated animate__zoomIn animate__delay-2s" id="startGif">
+            <img src="assets/images/kiss-love.gif"
+                class="animate__animated animate__flipInY animate__delay-2s w3-card-4 w3-margin">
+            <img src="https://media.giphy.com/media/d3mnEmgej63Z4RIQ/giphy.gif"
+                class="animate__animated animate__flipInY animate__delay-2s w3-card-4 w3-margin"
+                style="width: 300px; height: 220px;">
+        </div>
+
+
+        <!-- RESULT -->
+        <div id="resultGroup" class="mt-5">
+            <div id="result">
+                <h2 id="resultHeader" class="animate__animated animate__zoomIn animate__delay-2s mb-3"></h2>
+                <img id="resultImg" class="animate__animated animate__flipInY animate__delay-2s w3-card-4">
+            </div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div id="btnsGroup" class="btns-group">
+            <button type="button" onclick="yesClicked()" id="btnYes"
+                class="animate__animated animate__zoomIn animate__delay-2s m-3 btn btn-dark btn-lg w3-card">Yeah
+                😄</button>
+            <button type="button" onclick="noClicked()" id="btnNo"
+                class="animate__animated animate__zoomIn animate__delay-3s m-3 btn btn-dark btn-lg w3-card">Nope
+                😢</button>
+            <button type="button" onclick="changeAnswerClicked()" id="btnChangeAnswer"
+                class="animate__animated animate__zoomIn animate__delay-2s btn btn-dark btn-lg w3-card">Change
+                Answer</button>
+        </div>
+
+        <div id="credit" class="animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="#">
+                I
+                <span id="heart"
+                    class="animate__animated animate__heartBeat animate__delay-5s animate__slow animate__infinite">❤</span>
+                You
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- SCRIPTS 
+    ------------------------------------------------------------------------------------------------>
+    <script src="settings.js"></script>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+
+</html>
