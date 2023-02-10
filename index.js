@@ -8,7 +8,7 @@ let resultHeader = document.getElementById("resultHeader");
 let resultImg = document.getElementById("resultImg");
 let btnYes = document.getElementById("btnYes");
 let btnNo = document.getElementById("btnNo");
-let btnChangeAnswer = document.getElementById("btnChangeAnswer");
+// let btnChangeAnswer = document.getElementById("btnChangeAnswer");
 let startGif = document.getElementById("startGif");
 let mainContainer = document.getElementById("mainContainer");
 
@@ -46,7 +46,7 @@ const hideUI = (msg) => {
   btnYes.style.display = "none";
   btnNo.style.display = "none";
   resultDiv.style.display = "none";
-  btnChangeAnswer.style.display = "none";
+  // btnChangeAnswer.style.display = "none";
   startGif.style.display = "none";
   mainContainer.style.display = "none";
 };
@@ -175,7 +175,7 @@ const setUI = (answer) => {
     btnYes.style.display = "none";
     btnNo.style.display = "none";
     resultDiv.style.display = "none";
-    btnChangeAnswer.style.display = "none";
+    // btnChangeAnswer.style.display = "none";
     startGif.style.display = "none";
     mainContainer.style.display = "none";
   } else {
@@ -183,7 +183,7 @@ const setUI = (answer) => {
     btnYes.style.display = "inline";
     btnNo.style.display = "inline";
     resultDiv.style.display = "none";
-    btnChangeAnswer.style.display = "none";
+    // btnChangeAnswer.style.display = "none";
     startGif.style.display = "block";
     mainContainer.style.display = "block";
   }
@@ -202,7 +202,7 @@ function yesResponse() {
     resultHeader.innerHTML = uiData.resultHeaderYes;
     resultImg.src = uiData.yesImgLink;
     resultDiv.style.display = "block";
-    btnChangeAnswer.style.display = "inline";
+    // btnChangeAnswer.style.display = "inline";
     btnYes.style.display = "none";
     btnNo.style.display = "none";
     startGif.style.display = "none";
@@ -222,7 +222,7 @@ function noResponse() {
     resultHeader.innerHTML = uiData.resultHeaderNo;
     resultImg.src = uiData.noImgLink;
     resultDiv.style.display = "block";
-    btnChangeAnswer.style.display = "inline";
+    // btnChangeAnswer.style.display = "inline";
     btnYes.style.display = "none";
     btnNo.style.display = "none";
     startGif.style.display = "none";
@@ -263,7 +263,7 @@ const noClicked = () => {
   setData("no");
 };
 
-const changeAnswerClicked = () => {
-  setData("");
-  setUI();
-};
+// const changeAnswerClicked = () => {
+//   setData("");
+//   setUI();
+// };
