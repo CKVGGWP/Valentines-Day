@@ -76,42 +76,65 @@ const question = () => {
       allowEnterKey: false,
     }).then((result) => {
       Swal.fire({
-        title: "So, I want to ask you something...",
-        imageUrl: "https://media.giphy.com/media/3o6wrtMgP9zOzudnzi/giphy.gif",
+        title: "Second, good luck on getting those certifications! You can do it! I am so proud of you! :)",
+        imageUrl: "assets/images/giphy.gif",
         imageWidth: 400,
         imageHeight: 300,
-        confirmButtonText: "What is it ?",
+        confirmButtonText: "Thank you! :)",
         allowOutsideClick: false,
         allowEscapeKey: false,
         allowEnterKey: false,
       }).then((result) => {
         Swal.fire({
-          title: "Since Valentines Day is almost here.",
-          text: "I'm going to be straight with you, I really want to take you on a date this Valentine's Day but I know that we are both busy with our work and other stuff.",
-          imageUrl: "https://media.giphy.com/media/mCRJDo24UvJMA/giphy.gif",
+          title: "Uhmm, anyways...",
+          imageUrl: "https://media.giphy.com/media/3o6MbeHSjggZAjR7eU/giphy.gif",
           imageWidth: 400,
           imageHeight: 300,
-          confirmButtonText: "Yup.",
+          confirmButtonText: "What is it ?",
           allowOutsideClick: false,
           allowEscapeKey: false,
           allowEnterKey: false,
         }).then((result) => {
           Swal.fire({
-            title: "So, I would like to ask...",
-            text: "Are you free on the 18th of February, 5 PM onwards? I know Valentine's Day is over this day but uhmmm...",
+            title: "I wanted to ask you something...",
             imageUrl:
-              "https://media.giphy.com/media/ZXpb6ZiMvLMwCmc5B3/giphy.gif",
+              "https://media.giphy.com/media/3o6wrtMgP9zOzudnzi/giphy.gif",
             imageWidth: 400,
             imageHeight: 300,
-            confirmButtonText: "Uhmmm...",
+            confirmButtonText: "What is it ?",
             allowOutsideClick: false,
             allowEscapeKey: false,
             allowEnterKey: false,
           }).then((result) => {
-            setUI();
+            Swal.fire({
+              title: "Since Valentines Day is almost here.",
+              text: "I'm going to be straight with you, I really want to take you on a date this Valentine's Day but I know that we are both busy with our work and other stuff.",
+              imageUrl: "https://media.giphy.com/media/mCRJDo24UvJMA/giphy.gif",
+              imageWidth: 400,
+              imageHeight: 300,
+              confirmButtonText: "Yup.",
+              allowOutsideClick: false,
+              allowEscapeKey: false,
+              allowEnterKey: false,
+            }).then((result) => {
+              Swal.fire({
+                title: "So, I would like to ask...",
+                text: "Are you free on the 18th of February, 5 PM onwards? I know Valentine's Day is over this day but uhmmm...",
+                imageUrl:
+                  "https://media.giphy.com/media/ZXpb6ZiMvLMwCmc5B3/giphy.gif",
+                imageWidth: 400,
+                imageHeight: 300,
+                confirmButtonText: "Uhmmm...",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+              }).then((result) => {
+                setUI();
+              });
+            });
           });
-        });
-      });
+        })
+      })
     });
   });
 };
